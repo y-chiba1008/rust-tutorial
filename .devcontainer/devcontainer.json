@@ -1,0 +1,40 @@
+{
+  "name": "${localWorkspaceFolderBasename}",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "features": {
+    "ghcr.io/devcontainers/features/rust:1.5.0": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // common
+        "adam-bender.commit-message-editor",
+        "hediet.vscode-drawio",
+        "mhutchie.git-graph",
+        "ritwickdey.LiveServer",
+        "mechatroner.rainbow-csv",
+        "google.gemini-cli-vscode-ide-companion",
+        // rust
+        "rust-lang.rust-analyzer",
+        "vadimcn.vscode-lldb",
+        "swellaby.vscode-rust-test-adapter",
+        "JScearcy.rust-doc-viewer"
+      ],
+      "settings": {
+        "[rust]": {
+          "editor.defaultFormatter": "rust-lang.rust-analyzer",
+          "editor.formatOnSave": true,
+          "editor.formatOnType": true
+        },
+        "rust-analyzer.checkOnSave.command": "clippy"
+      }
+    }
+  },
+  "containerEnv": {
+    // Gemini CLIが拡張機能Gemini CLI Companionと連携する為に必要
+    "REMOTE_CONTAINERS": "true",
+    // ワークスペースを信頼済みにする
+    "GEMINI_CLI_TRUST_WORKSPACE": "true"
+  },
+  "postCreateCommand": "npm install -g @google/gemini-cli"
+}
