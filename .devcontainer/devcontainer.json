@@ -26,7 +26,8 @@
           "editor.formatOnSave": true,
           "editor.formatOnType": true
         },
-        "rust-analyzer.checkOnSave.command": "clippy"
+        "rust-analyzer.checkOnSave": true,
+        "rust-analyzer.check.command": "clippy"
       }
     }
   },
