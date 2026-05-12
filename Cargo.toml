@@ -1,4 +1,10 @@
 [workspace]
-members = ["projects/*"]
-exclude = ["projects/ch01_02_hello_world"]
+members = [
+    # "projects/ch01_03_hello_cargo",
+    # "projects/ch02_00_guessing_game",
+    # "projects/ch03_01_variables",
+    # "projects/ch03_03_functions",
+    # "projects/ch03_05_branches",
+    "projects/ch03_05_loops",
+]
 resolver = "3"
