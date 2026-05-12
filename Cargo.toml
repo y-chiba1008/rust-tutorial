@@ -5,6 +5,7 @@ members = [
     # "projects/ch03_01_variables",
     # "projects/ch03_03_functions",
     # "projects/ch03_05_branches",
-    "projects/ch03_05_loops",
+    # "projects/ch03_05_loops",
+    "projects/ch03_20_fibonacci_sequence",
 ]
 resolver = "3"

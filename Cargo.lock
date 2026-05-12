@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "ch03_05_loops"
+name = "ch03_20_fibonacci_sequence"
 version = "0.1.0"
