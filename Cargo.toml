@@ -1,3 +1,4 @@
 [workspace]
 members = ["projects/*"]
 exclude = ["projects/hello_world"]
+resolver = "3"
